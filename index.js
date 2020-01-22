@@ -26,7 +26,8 @@ const binops = {
   '-':   function (a, b) { return a - b; },
   '*':   function (a, b) { return a * b; },
   '/':   function (a, b) { return a / b; },
-  '%':   function (a, b) { return a % b; }
+  '%':   function (a, b) { return a % b; },
+  'in':  function (a, b) { return b.some(it => it === a); }
 };
 
 const unops = {
